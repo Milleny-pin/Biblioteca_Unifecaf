@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="templates/style.css">
+    <link rel="stylesheet" href="/static/style.css">
     <title>Biblioteca</title>
      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
     
@@ -15,42 +15,47 @@
             <a href="#genero">GÊNEROS</a>
             <a href="#meus">MEUS LIVROS</a>
             <a href="/perfil" class="profile-button">
-                <img src="" alt="foto perfil">
+                <img src="/imagens/Captura_de_tela_2025-09-26_194701-removebg-preview.png" alt="foto perfil">
             </a>
-        </nav>
-        <div class="logo-container">
-            <img src="" alt="logo">
-        </div>
-        <form class="search-form" role="search" action="/buscar" method="GET">
+            <form class="search-form" role="search" action="/buscar" method="GET">
             <input type="search" name="q" placeholder="Buscar livros, autores..." aria-label="Buscar">
             <button type="submit">Buscar</button>
         </form>
+        </nav>
+        
     </header>
     <main>
         <section id="home">
-            <div class="container home h1">
-                <h1>LIVRARIA VIRTUAL FECAF</h1>
+            
+             <div class="logo-container">
+                <img src="/imagens/logo.png" alt="logo">
+             </div>
+
+            <div class="container-principal-home">
+              <div class="container home h2">
+                  <h1>Encontre os melhores <br>livros que te <br>acompanharão em sua <br>jornada aqui!!!</h1>
+              </div>
+                <div class="livros home">
+                  <model-viewer src="/modelos/interior_-_books__minecraft.glb"
+                  alt="modelo 3D 1"
+                  shadow-intensity="1"
+                  camera-controls auto-rotate
+                  disable-tap
+                  style="width: 250px; height: 350px; margin: 10px;" >  ></model-viewer>
+              </div>
             </div>
-            <div class="container home h2">
-                <h2>Encontre os melhores livros que te acompanharão em sua jornada aqui!!!</h2>
-            </div>
-            <div class="livros home">
-                <model-viewer src="/modelos/interior_-_books__minecraft.glb"
-                alt="modelo 3D 1"
-                shadow-intensity="1"
-                camera-controls auto-rotate
-                style="width: 250px; height: 350px; margin: 10px;" >  ></model-viewer>
-            </div>
-            <div class="container home h22">
-                <h2>Os mais escolhidos</h2>
-            </div>
-            <div class="livros preferidos">
-                <model-viewer src="/modelos/preferidos.glb"
-                alt="modelo 3D 1"
-                shadow-intensity="1"
-                camera-controls auto-rotate
-                style="width: 700px; height: 800px; margin: 10px;" >  
-                ></model-viewer>
+            <div class="fundo-preferidos">
+                <div class="container home h22">
+                  <h1>Os mais escolhidos</h1>
+                </div>
+                <div class="livros preferidos">
+                  <model-viewer src="/modelos/preferidos.glb"
+                  alt="modelo 3D 1"
+                  shadow-intensity="1"
+                  camera-controls auto-rotate
+                  style="width: 900px; height: 400px; margin: 10px;" >  
+                   ></model-viewer>
+              </div>
             </div>
         </section>
         <section id="genero">
