@@ -5,108 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/style.css">
     <title>Biblioteca</title>
-     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 <body>
     <header>
         <nav class="MENU">
-            <a href="#home">INÍCIO</a>
-            <a href="#genero">GÊNEROS</a>
-            <a href="#meus">MEUS LIVROS</a>
+            <a href="#home">BIBLIOTECA</a>
+            <a href="#nossos">NOSSOS LIVROS</a>
+            <a href="#unidades">UNIDADES</a>
             <a href="/perfil" class="profile-button">
                 <img src="/imagens/Captura_de_tela_2025-09-26_194701-removebg-preview.png" alt="foto perfil">
             </a>
             <form class="search-form" role="search" action="/buscar" method="GET">
-            <input type="search" name="q" placeholder="Buscar livros, autores..." aria-label="Buscar">
-            <button type="submit">Buscar</button>
-        </form>
+                <input type="search" name="q" placeholder="Buscar livros, autores..." aria-label="Buscar">
+                <button type="submit">Buscar</button>
+            </form>
         </nav>
-        
     </header>
     <main>
         <section id="home">
+
+            <div class="img-grande">
+                <img src="/imagens/img-livro.png">
+            </div>
             
-             <div class="logo-container">
+            <div class="logo-container">
                 <img src="/imagens/logo.png" alt="logo">
-             </div>
+            </div>
 
             <div class="container-principal-home">
-              <div class="container home h2">
-                  <h1>Encontre os melhores <br>livros que te <br>acompanharão em sua <br>jornada aqui!!!</h1>
-              </div>
+                <div class="container home ">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quasi iusto totam aliquid laborum a cupiditate ullam illo quibusdam, consequatur, perspiciatis delectus. Autem ab provident sed eveniet qui natus veniam.</h1>
+                </div>
                 <div class="livros home">
-                  <model-viewer src="/modelos/interior_-_books__minecraft.glb"
-                  alt="modelo 3D 1"
-                  shadow-intensity="1"
-                  camera-controls auto-rotate
-                  disable-tap
-                  style="width: 250px; height: 350px; margin: 10px;" >  ></model-viewer>
-              </div>
-            </div>
-            <div class="fundo-preferidos">
-                <div class="container home h22">
-                  <h1>Os mais escolhidos</h1>
+                    <model-viewer src="/modelos/interior_-_books__minecraft.glb"
+                    alt="modelo 3D 1"
+                    shadow-intensity="1"
+                    camera-controls auto-rotate
+                    disable-tap
+                    style="width: 250px; height: 350px; margin: 10px;" 
+                    camera-orbit="0deg 90deg auto"> 
+                    </model-viewer>
                 </div>
-                <div class="livros preferidos">
-                  <model-viewer src="/modelos/preferidos.glb"
-                  alt="modelo 3D 1"
-                  shadow-intensity="1"
-                  camera-controls auto-rotate
-                  style="width: 900px; height: 400px; margin: 10px;" >  
-                   ></model-viewer>
-              </div>
+                <div class="container home ">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatibus natus id temporibus repellat enim veritatis aperiam totam nulla sequi voluptatum consectetur tempore cumque, mollitia pariatur ea maxime deleniti inventore!</h1>
+                </div>    
             </div>
-        </section>
-        <section id="genero">
-            <div class="generos">
-                <div class="livro1">
-                    <h3>Tecnologia</h3>
-                    <img src="/imagens/livro1.png" alt="livro1">
-                </div>
-                <div class="livro2">
+            
+            <div class="livros-favoritos">
+                <div class="livro">
                     <h3>Engenharia</h3>
                     <img src="/imagens/livro2.png" alt="livro2">
                 </div>
-                <div class="livro3">
-                    <h3>Negócios</h3>
-                    <img src="/imagens/livro3.png" alt="livro3">
-                </div>
-                <div class="livro4">
-                    <h3>Ciências</h3>
-                    <img src="/imagens/livro4.png" alt="livro4">
-                </div>
-                <div class="livro5">
+                <div class="livro">
                     <h3>Direito</h3>
                     <img src="/imagens/livro5.png" alt="livro5">
                 </div>
-                <div class="livro6">
+                <div class="livro">
                     <h3>Humanas</h3>
                     <img src="/imagens/livro6.png" alt="livro6">
                 </div>
-                <div class="livro7">
-                    <h3>Medicina</h3>
-                    <img src="/imagens/livro7.png" alt="livro7">
-                </div>
-                <div class="livro8">
+                <div class="livro">
                     <h3>Artes</h3>
                     <img src="/imagens/livro8.png" alt="livro8">
                 </div>
             </div>
+        </section> <div class="fundo-preferidos">
+            <div class="container home h22">
+                <h1>Os mais escolhidos</h1>
+            </div>
+            <div class="livros preferidos">
+                <model-viewer src="/modelos/preferidos.glb"
+                alt="modelo 3D 1"
+                shadow-intensity="1"
+                camera-controls auto-rotate
+                style="width: 900px; height: 400px; margin: 10px;"> 
+                </model-viewer>
+            </div>
+        </div>
+
+        <section id="nossos">
+            <div class="Nossos"> <div class="Nossos-livros">
+                    <h1>Tecnologia</h1>
+                    <img src="/imagens/l1.png">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora voluptate et facilis commodi odio voluptatibus. Mollitia qui ratione et architecto, ea repellendus modi quas, quae, eum quasi provident cumque?</h3>
+                </div>
+                <div class="Nossos-livros">
+                    <h1>Tecnologia</h1>
+                    <img src="/imagens/l2.png">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora voluptate et facilis commodi odio voluptatibus. Mollitia qui ratione et architecto, ea repellendus modi quas, quae, eum quasi provident cumque?</h3>
+                </div>
+                <div class="Nossos-livros">
+                    <h1>Tecnologia</h1>
+                    <img src="/imagens/l3.png">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora voluptate et facilis commodi odio voluptatibus. Mollitia qui ratione et architecto, ea repellendus modi quas, quae, eum quasi provident cumque?</h3>
+                </div>
+                <div class="Nossos-livros">
+                    <h1>Tecnologia</h1>
+                    <img src="/imagens/l4.png">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora voluptate et facilis commodi odio voluptatibus. Mollitia qui ratione et architecto, ea repellendus modi quas, quae, eum quasi provident cumque?</h3>
+                </div>
+                 <div class="Nossos-livros">
+                    <h1>Tecnologia</h1>
+                    <img src="/imagens/l5.png">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora voluptate et facilis commodi odio voluptatibus. Mollitia qui ratione et architecto, ea repellendus modi quas, quae, eum quasi provident cumque?</h3>
+                </div>
+                 <div class="Nossos-livros">
+                    <h1>Tecnologia</h1>
+                    <img src="/imagens/l6.png">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora voluptate et facilis commodi odio voluptatibus. Mollitia qui ratione et architecto, ea repellendus modi quas, quae, eum quasi provident cumque?</h3>
+                </div>
+            </div>
         </section>
-        <section id="meus">
-            <div class="meus-livros">
-                <h1>Meus livros</h1>
+        <section id="unidades">
+            <div class="unidade">
+                <img src="">
+                <h1>UNIDADE 1</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit tempore alias ipsa corrupti dolorem cupiditate tenetur, quo ea officiis, ipsum dicta nobis iusto similique veritatis aspernatur voluptatem? Rem, doloremque cumque!</h2>
             </div>
-            <div class="livros-favoritos">
-                <div class="livrofav1">
-                    <img src="/imagens/livrofav1.png" alt="fav1">
-                </div>
-                <div class="livrofav1">
-                    <img src="/imagens/livrofav2.png" alt="fav2">
-                </div>
-            </div>
-            
         </section>
     </main>
 </body>
