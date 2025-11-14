@@ -57,31 +57,6 @@ O projeto contém:
 
 ---
 
-## 🗂 Estrutura do Projeto
-
-/static
-└── style.css
-
-/modelos
-├── interior_-_books__minecraft.glb
-└── preferidos.glb
-
-/imagens
-├── logo.png
-├── img-livro.png
-├── polo1.png
-├── polo2.png
-├── polo3.png
-├── l1.png
-├── l2.png
-├── l3.png
-├── l4.png
-├── l5.png
-├── l6.png
-└── feroz.png
-
-
----
 
 ## 🛠 Tecnologias Utilizadas
 
