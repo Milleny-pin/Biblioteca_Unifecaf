@@ -1,160 +1,102 @@
-🎨✨ Biblioteca Virtual — README Super Estilizado
-<div align="center">
-📚 Biblioteca Virtual
-Uma experiência moderna, visual e interativa com livros, modelos 3D e design elegante.
+# 📚 Biblioteca Virtual — Projeto Front-End
 
+## 🌟 Uma experiência moderna com livros, 3D e design elegante
 
+![status](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-8257E5?style=for-the-badge)
+![html](https://img.shields.io/badge/HTML5-E44D26?style=for-the-badge&logo=html5&logoColor=fff)
+![css](https://img.shields.io/badge/CSS3-264DE4?style=for-the-badge&logo=css3&logoColor=fff)
+![model-viewer](https://img.shields.io/badge/3D_ModelViewer-00BFA6?style=for-the-badge)
 
+---
 
+## ✨ Sobre o Projeto
 
+A **Biblioteca Virtual** apresenta conteúdos literários de forma moderna e interativa.  
+Este projeto utiliza:
 
+- HTML5  
+- CSS3  
+- Modelos 3D no formato `.glb`  
+- Navegação por seções  
+- Layout limpo e responsivo  
 
+---
 
-</div>
-<div align="center"> <img src="https://img.shields.io/badge/🌟_Projeto_com_Modelos_3D-000?style=for-the-badge" /> </div>
-✨ Sobre o Projeto
+## 🚀 Funcionalidades
 
-A Biblioteca Virtual foi desenvolvida para apresentar conteúdo literário de forma visual, dinâmica e envolvente.
-O projeto combina:
+### 🔍 Barra de Navegação
+- Home  
+- Nossos Livros  
+- Unidades  
+- Contatos  
+- Perfil do usuário  
+- Busca integrada  
 
-interface moderna
+### 📦 Modelos 3D Interativos
+Implementação com suporte a rotação e zoom utilizando **Model Viewer**.
 
-navegação suave
+### 📚 Categorias Apresentadas
+- Tecnologia  
+- Nutrição  
+- Marketing  
+- Artes  
+- Geografia  
+- Matemática  
 
-modelos 3D reais usando <model-viewer>
+### 🏛️ Unidades
+Cada unidade apresenta:
+- imagem  
+- nome  
+- descrição  
 
-seções temáticas organizadas
+### 📞 Contatos
+O projeto contém:
+- email institucional  
+- telefone  
+- endereço completo  
 
-experiência altamente visual e responsiva
+---
 
-🚀 Funcionalidades Principais
-🔍 Barra de Navegação Inteligente
+## 🗂 Estrutura do Projeto
 
-Com acesso rápido para:
-
-Home
-
-Nossos Livros
-
-Unidades
-
-Contatos
-
-Perfil do usuário
-
-Busca integrada
-
-📦 Modelos 3D Interativos
-
-Implementação do Google Model Viewer:
-
-<model-viewer
-  src="/modelos/interior_-_books__minecraft.glb"
-  camera-controls
-  auto-rotate
-  shadow-intensity="1">
-</model-viewer>
-
-
-Rotação
-
-Zoom
-
-Sombra realista
-
-Compatível com WebXR
-
-📚 Categorias Completas
-
-Seções com:
-
-Tecnologia
-
-Nutrição
-
-Marketing
-
-Artes
-
-Matemática
-
-Geografia
-
-Cada uma com imagem + descrição.
-
-🏛️ Unidades Presenciais
-
-Cards contendo:
-
-imagem
-
-título
-
-texto explicativo
-
-📞 Contatos
-
-Organizado em visual limpo com:
-
-email
-
-telefone
-
-endereço
-
-🗂️ Estrutura do Projeto
 /static
-   └── style.css
+└── style.css
 
 /modelos
-   ├── interior_-_books__minecraft.glb
-   └── preferidos.glb
+├── interior_-_books__minecraft.glb
+└── preferidos.glb
 
 /imagens
-   ├── logo.png
-   ├── img-livro.png
-   ├── polo1.png
-   ├── polo2.png
-   ├── polo3.png
-   ├── l1.png ... l6.png
-   └── feroz.png
+├── logo.png
+├── img-livro.png
+├── polo1.png
+├── polo2.png
+├── polo3.png
+├── l1.png
+├── l2.png
+├── l3.png
+├── l4.png
+├── l5.png
+├── l6.png
+└── feroz.png
 
-🛠️ Tecnologias
-Tecnologia	Função
-HTML5	Base estrutural
-CSS3	Estilização e responsividade
-Model Viewer 3.4.0	Visualização 3D
-GLB Models	Modelos de livros e ambientes
-🛠️ Como Rodar
-1️⃣ Baixe o repositório
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+| Tecnologia         | Finalidade                           |
+|-------------------|---------------------------------------|
+| **HTML5**          | Estrutura das páginas                 |
+| **CSS3**           | Estilização e responsividade          |
+| **Model Viewer**   | Renderização 3D no navegador          |
+| **GLB Models**     | Modelos tridimensionais utilizados    |
+
+---
+
+## 🚀 Como Rodar
+
+### 1️⃣ Clone o repositório
+
+```bash
 git clone <seu-repo>
-
-2️⃣ Garanta a estrutura de pastas
-
-Imagens, modelos e CSS precisam estar organizados como acima.
-
-3️⃣ Abra o index.html
-
-Funciona direto no navegador (Chrome recomendado).
-
-📌 Melhorias Futuras
-
-Tema escuro/claro
-
-Sistema de login real
-
-Favoritar livros
-
-API real de consulta
-
-Animações avançadas em GSAP
-
-Versão mobile ainda mais fluida
-
-<div align="center">
-💙 Desenvolvido com dedicação
-por Milleny Souza (@minhoquinha)
-
-Todos os direitos reservados à UniFecaf.
-
-</div>
